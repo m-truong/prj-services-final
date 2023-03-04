@@ -10,6 +10,8 @@ import { Recipe } from '../../recipe.model';
 })
 export class RecipeItemComponent implements OnInit {
   @Input() recipe: Recipe;
+  // todo: add a relative path so that the recipe-item component knows to re-direct relative to the path it is already on
+  @Input() index: number;
 
   constructor() { }
 
